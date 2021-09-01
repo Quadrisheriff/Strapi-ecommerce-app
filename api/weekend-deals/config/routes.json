@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/weekend-deals",
+      "handler": "weekend-deals.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/weekend-deals/count",
+      "handler": "weekend-deals.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/weekend-deals/:id",
+      "handler": "weekend-deals.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/weekend-deals",
+      "handler": "weekend-deals.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/weekend-deals/:id",
+      "handler": "weekend-deals.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/weekend-deals/:id",
+      "handler": "weekend-deals.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

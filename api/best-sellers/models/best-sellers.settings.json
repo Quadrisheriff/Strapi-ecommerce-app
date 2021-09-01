@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "best_sellers",
+  "info": {
+    "name": "Best sellers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Products": {
+      "type": "string"
+    },
+    "products": {
+      "collection": "product",
+      "via": "best_sellers",
+      "dominant": true
+    }
+  }
+}

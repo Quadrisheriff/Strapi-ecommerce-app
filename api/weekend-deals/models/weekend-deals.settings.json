@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "weekend_deals",
+  "info": {
+    "name": "Weekend deals"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Products": {
+      "type": "string"
+    },
+    "products": {
+      "collection": "product",
+      "via": "weekend_deals",
+      "dominant": true
+    }
+  }
+}

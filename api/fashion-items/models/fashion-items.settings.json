@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fashion_items",
+  "info": {
+    "name": "Fashion items"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Products": {
+      "type": "string"
+    },
+    "products": {
+      "collection": "product",
+      "via": "fashion_items",
+      "dominant": true
+    }
+  }
+}
